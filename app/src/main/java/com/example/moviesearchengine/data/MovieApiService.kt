@@ -5,12 +5,17 @@ import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface MovieApiService {
-    @GET("characters?limit=100")
-    suspend fun findAllMovies() : MovieList
+    /*@GET("characters?limit=100")
+    suspend fun findAllMovies() : MovieList*/
 
-    @GET("&s=")
-    suspend fun findMoviesByTitle(@Query("Title") query: String) : MovieList
+    /*@GET("&s={Title}")
+    suspend fun findMoviesByTitle(@Query("Title") query: String) : MovieResponse*/
 
-    @GET("&i=")
-    suspend fun getMovieById(@Path("imdbID") id: Int) : Movie
+    @GET("/?apikey=fb7aca4")
+    suspend fun findMoviesByTitle(@Query("s") query: String) : MovieResponse
+
+    @GET("/?apikey=fb7aca4")
+    suspend fun getMovieById(@Query("i") query: String) : Movie
+
+
 }
