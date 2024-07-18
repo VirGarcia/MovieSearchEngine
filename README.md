@@ -7,11 +7,11 @@ Buscador de películas.<br><br>
 La App está desarrollada para Android, utiliza una API para listar películas.<br><br>
 
 3. ***Funcionalidades***<br><br>
-El usuario disfruta de una experiencia cómoda e intuitiva en su dispositivo, al utilizar la aplicación obtiene un listado de películas. La App dispone de un buscador de películas por título. El usuario si clickea sobre la película deseada, recupera el detalle y una imagen.
+El usuario disfruta de una experiencia cómoda e intuitiva en su dispositivo, haciendo uso del scroll en pantalla, además dispone de un progress bar para mostrar al usuario que la app está "cargando datos" al utilizar la aplicación se obtiene un listado de películas. La App dispone de un buscador de películas por título. El usuario si hace click sobre la película deseada, recupera el detalle y una imagen. 
 
 4. ***Tecnologías***<br><br>
-La App está desarrollada en Kotlin, utilizando como IDE Android Studio y como herramientas Retrofit2, Picasso, como recursos se utiliza el Recycler View y Binding
-8. ***Demo***<br><br>
+La App está desarrollada en Kotlin, utilizando como IDE Android Studio y como herramientas Retrofit2, Picasso, como recursos se utiliza el Recycler View y ViewBinding
+5. ***Demo***<br><br>
 
 ![Primera Activity_Eng](/images/01.jpg)
 ![Primera Activity_Esp](/images/02.jpg)
@@ -24,8 +24,5 @@ La App está desarrollada en Kotlin, utilizando como IDE Android Studio y como h
 ![Redirección a la url del evento](/images/09.jpg)
 
 
-
-
-
-9. ***Autor***<br><br>
+6. ***Autor***<br><br>
 Vir García
