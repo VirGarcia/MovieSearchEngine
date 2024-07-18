@@ -12,17 +12,8 @@ El usuario disfruta de una experiencia cómoda e intuitiva en su dispositivo, ha
 4. ***Tecnologías***<br><br>
 La App está desarrollada en Kotlin, utilizando como IDE Android Studio y como herramientas Retrofit2, Picasso, como recursos se utiliza el Recycler View y ViewBinding
 5. ***Demo***<br><br>
-
-![Primera Activity_Eng](/images/01.jpg)
-![Primera Activity_Esp](/images/02.jpg)
-![Introducción Datos Usuario](/images/03.jpg)
-![Búsqueda evento por nombre](/images/04.jpg)
-![PBúsqueda evento por código postal](/images/05.jpg)
-![Segunda activity, visualización detalle evento](/images/06.jpg)
-![Lista eventos, eventos en verde mismo C.P. eventos favoritos muestra icono](/images/07.jpg)
-![Compartir](/images/08.jpg)
-![Redirección a la url del evento](/images/09.jpg)
-
+![Primera Activity](/images/01.jpg)
+![Segunda Activity_detalle](/images/02.jpg)
 
 6. ***Autor***<br><br>
 Vir García
