@@ -75,7 +75,6 @@ class MainActivity : AppCompatActivity() {
 
                 runOnUiThread {
                     movieList = result.results
-                    //movieList = result.search
                     adapter.updateData(movieList)
                 }
                 //Log.i("HTTP", "${result.results}")

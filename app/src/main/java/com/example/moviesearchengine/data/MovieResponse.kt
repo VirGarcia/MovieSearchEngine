@@ -1,29 +1,27 @@
 package com.example.moviesearchengine.data
 
-import android.media.Image
 import com.google.gson.TypeAdapter
 import com.google.gson.annotations.SerializedName
 import com.google.gson.stream.JsonReader
 import com.google.gson.stream.JsonWriter
 
 data class MovieResponse (
-    @SerializedName("Search") val results: List<Movie>
-    //@SerializedName("Search") val search: String,
-    //@SerializedName("response") val response: String,
-    //@SerializedName("results") val results: List<Movie>,
-    //@SerializedName("Search") val search: List<Movie>
+    @SerializedName("Search") val results: List<Movie>,
+    @SerializedName("Response") val response: String
 
-    //@SerializedName("results-for") val resultsFor: String?,
-    //@SerializedName("results") val results: List<Superhero>
+
 ){
 }
 
 data class Movie (
-    //@SerializedName("name") val name: String,
     @SerializedName("imdbID") val id: String,
     @SerializedName("Title") val title: String,
     @SerializedName("Year") val year: String,
+    @SerializedName("Type") val type: String,
     @SerializedName("Poster") val image: String,
+
+    //hay q poner los interrogantes porque la primera vez q se llama solo trae 5 campos, luego
+    //para obtener el resto hay que hacerlo llamando por el id.
     @SerializedName("Plot") val plot: String?,
     @SerializedName("Runtime") val runtime: String?,
     @SerializedName("Director") val director: String?,
@@ -32,9 +30,9 @@ data class Movie (
 ) {
 }
 
-data class Image (
-    @SerializedName("url") val url: String
-)
+//no hace falta clase IMAGE porque en este caso poster es tipo string y ahi viene la url.
+//en el caso del superheroe la imagen venia como objeto por eso haciamos lo de data class image
+
 
 class IntegerAdapter : TypeAdapter<Int>() {
     override fun write(out: JsonWriter?, value: Int) {

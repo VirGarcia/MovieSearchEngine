@@ -34,7 +34,6 @@ class DetailActivity : AppCompatActivity() {
     }
 
     private fun loadData() {
-        //binding.nameTextView.text = movie.name
         binding.titleTextView.text = movie.title
         binding.yearTextView.text = movie.year
         binding.plotTextView.text = movie.plot
